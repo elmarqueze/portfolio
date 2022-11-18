@@ -5,24 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waldir Marquez Portfolio</title>
+    <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
     
+    <!--=============== Scroll to top button ===============-->
+    <div class="scrollToTop-btn flex-center">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!--=============== Light/Dark theme button ===============-->
+    <div class="theme-btn flex-center">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
+
     <!--=============== Header ===============-->
     <header>
         <div class="navbar">
             <a href="#" class="logo">Waldir</a>
             <div class="navigation">
                 <div class="nav-items">
-                    <a href="#home">Home</a>
+                    <div class="nav-close-btn"></div>
+                    <a class="active" href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
                     <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
                     <a href="#contact">Contact</a>
                 </div>
             </div>
+            <div class="nav-menu-btn"></div>
         </div>
     </header>
 
@@ -149,6 +164,20 @@
                             </li>
                             <li class="bar">
                                 <div class="info">
+                                    <span>Bootstrap</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="line javascript"></div>
+                            </li>
+                            <li class="bar">
+                                <div class="info">
+                                    <span>SASS</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="line javascript"></div>
+                            </li>
+                            <li class="bar">
+                                <div class="info">
                                     <span>Javascript</span>
                                     <span>60%</span>
                                 </div>
@@ -249,9 +278,352 @@
     </section>
 
     <!--=============== Services section ===============-->
-    <section class="services"></section>
+    <section class="services section" id="services">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Services</h1>
+            <h2 class="section-title-02">Services</h2>
+            <div class="content">
+                <div class="services-description">
+                    <h3>What I provide</h3>
+                </div>
+                <ul class="service-list">
+                    <li class="service-container">
+                        <div class="service-card">
+                            <i class="fas fa-pencil-ruler"></i>
+                            <h3>UI/UX Consultancy</h3>
+                            <div class="learn-more-btn">Learn More <i class="fas fa-long-arrow-alt-right"></i></div>
+                        </div>
+                        <div class="service-modal flex-center">
+                            <div class="service-modal-body">
+                                <i class="fas fa-times modal-close-btn"></i>
+                                <h3>Ui/UX Consultancy</h3>
+                                <h4>What is UX consulting?</h4>
+                                <p>UX consulting helps companies improve their product's overall usability and optimize expenses by implementing the right UX processes, methods and tools.</p>
+                                <h4>What I provide</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, cum.</li>
+                                    <li><i class="fas fa-check-circle"></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, cum.</li>
+                                    <li><i class="fas fa-check-circle"></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, cum.</li>
+                                    <li><i class="fas fa-check-circle"></i>Save sources</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-container">
+                        <div class="service-card">
+                            <i class="fas fa-photo-video"></i>
+                            <h3>Branding & Design</h3>
+                            <div class="learn-more-btn">Learn More <i class="fas fa-long-arrow-alt-right"></i></div>
+                        </div>
+                        <div class="service-modal flex-center">
+                            <div class="service-modal-body">
+                                <i class="fas fa-times modal-close-btn"></i>
+                                <h3>Branding & Design</h3>
+                                <h4>What is Branding & Design?</h4>
+                                <p>Brand Design can be defined as one of the crucial marketing practices of creating the name, logo, design and the symbolic elements related to the brand to creative a distinctive identity in comparison to the other brands in the market and also providing impetus to the product differentiation.</p>
+                                <h4>What I provide</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> Logo Design</li>
+                                    <li><i class="fas fa-check-circle"></i> Banner Design</li>
+                                    <li><i class="fas fa-check-circle"></i> Visual Identity Packages</li>
+                                    <li><i class="fas fa-check-circle"></i> Business Cards & Business Systems</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-container">
+                        <div class="service-card">
+                            <i class="fas fa-file-code"></i>
+                            <h3>Web Development</h3>
+                            <div class="learn-more-btn">Learn More <i class="fas fa-long-arrow-alt-right"></i></div>
+                        </div>
+                        <div class="service-modal flex-center">
+                            <div class="service-modal-body">
+                                <i class="fas fa-times modal-close-btn"></i>
+                                <h3>Web Development</h3>
+                                <h4>What is Web Development?</h4>
+                                <p>Web development services are used to design, build, support and envolve all types of web-based software.</p>
+                                <h4>What I provide</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i>Web application development</li>
+                                    <li><i class="fas fa-check-circle"></i>Testing</li>
+                                    <li><i class="fas fa-check-circle"></i>Maintenance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="service-container">
+                        <div class="service-card">
+                            <i class="fas fa-align-left"></i>
+                            <h3>Content Writing</h3>
+                            <div class="learn-more-btn">Learn More <i class="fas fa-long-arrow-alt-right"></i></div>
+                        </div>
+                        <div class="service-modal flex-center">
+                            <div class="service-modal-body">
+                                <i class="fas fa-times modal-close-btn"></i>
+                                <h3>Content Writing</h3>
+                                <h4>What is Content Writing?</h4>
+                                <p>Content writing is the process of planning, writing and editing web content, typically for digital marketing purposes.</p>
+                                <h4>What I provide</h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i>Web content writing</li>
+                                    <li><i class="fas fa-check-circle"></i>Blog writing for websites</li>
+                                    <li><i class="fas fa-check-circle"></i>Social media content</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--=============== Portfolio section ===============-->
+    <section class="portfolio section" id="portfolio">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Portfolio</h1>
+            <h2 class="section-title-02">Portfolio</h2>
+            <div class="content">
+                <div class="portfolio-list">
+                    <div class="img-card-container">
+                        <div class="img-card">
+                            <div class="overlay"></div>
+                            <div class="info">
+                                <h3>Web Design</h3>
+                                <span>Youtube</span>
+                            </div>
+                            <img src="./img/work1.jpg" alt="">
+                        </div>
+                        <div class="portfolio-model flex-center">
+                            <div class="portfolio-model-body">
+                                <i class="fas fa-times portfolio-close-btn"></i>
+                                <h3>Web Design</h3>
+                                <img src="./img/work1.jpg" alt="">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi corporis sunt sequi illo earum. Recusandae mollitia odio inventore tempore earum! Officia, nesciunt quidem! Sapiente dicta fuga veniam et odit maxime expedita quia. Consequatur est temporibus saepe amet tenetur veniam numquam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-card-container">
+                        <div class="img-card">
+                            <div class="overlay"></div>
+                            <div class="info">
+                                <h3>UI/UX Design</h3>
+                                <span>Youtube</span>
+                            </div>
+                            <img src="./img/work2.jpg" alt="">
+                        </div>
+                        <div class="portfolio-model flex-center">
+                            <div class="portfolio-model-body">
+                                <i class="fas fa-times portfolio-close-btn"></i>
+                                <h3>UI/UX Design</h3>
+                                <img src="./img/work2.jpg" alt="">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi corporis sunt sequi illo earum. Recusandae mollitia odio inventore tempore earum! Officia, nesciunt quidem! Sapiente dicta fuga veniam et odit maxime expedita quia. Consequatur est temporibus saepe amet tenetur veniam numquam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-card-container">
+                        <div class="img-card">
+                            <div class="overlay"></div>
+                            <div class="info">
+                                <h3>Branding & design</h3>
+                                <span>Youtube</span>
+                            </div>
+                            <img src="./img/work3.jpg" alt="">
+                        </div>
+                        <div class="portfolio-model flex-center">
+                            <div class="portfolio-model-body">
+                                <i class="fas fa-times portfolio-close-btn"></i>
+                                <h3>Branding & design</h3>
+                                <img src="./img/work3.jpg" alt="">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi corporis sunt sequi illo earum. Recusandae mollitia odio inventore tempore earum! Officia, nesciunt quidem! Sapiente dicta fuga veniam et odit maxime expedita quia. Consequatur est temporibus saepe amet tenetur veniam numquam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-card-container">
+                        <div class="img-card">
+                            <div class="overlay"></div>
+                            <div class="info">
+                                <h3>Web Development</h3>
+                                <span>Youtube</span>
+                            </div>
+                            <img src="./img/work4.jpg" alt="">
+                        </div>
+                        <div class="portfolio-model flex-center">
+                            <div class="portfolio-model-body">
+                                <i class="fas fa-times portfolio-close-btn"></i>
+                                <h3>Web Development</h3>
+                                <img src="./img/work4.jpg" alt="">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi corporis sunt sequi illo earum. Recusandae mollitia odio inventore tempore earum! Officia, nesciunt quidem! Sapiente dicta fuga veniam et odit maxime expedita quia. Consequatur est temporibus saepe amet tenetur veniam numquam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-card-container">
+                        <div class="img-card">
+                            <div class="overlay"></div>
+                            <div class="info">
+                                <h3>Content Writing</h3>
+                                <span>Youtube</span>
+                            </div>
+                            <img src="./img/work6.jpg" alt="">
+                        </div>
+                        <div class="portfolio-model flex-center">
+                            <div class="portfolio-model-body">
+                                <i class="fas fa-times portfolio-close-btn"></i>
+                                <h3>Content Writing</h3>
+                                <img src="./img/work6.jpg" alt="">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi corporis sunt sequi illo earum. Recusandae mollitia odio inventore tempore earum! Officia, nesciunt quidem! Sapiente dicta fuga veniam et odit maxime expedita quia. Consequatur est temporibus saepe amet tenetur veniam numquam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-card-container">
+                        <div class="img-card">
+                            <div class="overlay"></div>
+                            <div class="info">
+                                <h3>Interface Design</h3>
+                                <span>Youtube</span>
+                            </div>
+                            <img src="./img/work5_1.jpg" alt="">
+                        </div>
+                        <div class="portfolio-model flex-center">
+                            <div class="portfolio-model-body">
+                                <i class="fas fa-times portfolio-close-btn"></i>
+                                <h3>Interface Design</h3>
+                                <img src="./img/work5_1.jpg" alt="">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi corporis sunt sequi illo earum. Recusandae mollitia odio inventore tempore earum! Officia, nesciunt quidem! Sapiente dicta fuga veniam et odit maxime expedita quia. Consequatur est temporibus saepe amet tenetur veniam numquam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--=============== Get-in-touch ===============-->
+        <div class="get-in-touch sub-section">
+            <div class="container">
+                <div class="content flex-center">
+                    <div class="contact-card flex-center">
+                        <div class="title">
+                            <h4>Let's Talk</h4>
+                            <h3>About Your</h3>
+                            <h2>Next Project</h2>
+                        </div>
+                        <div class="contact-btn">
+                            <a href="" class="btn">Get In Touch <i class="fas fa-paper-plane"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!--=============== Our Clientes ===============-->
+        <!-- <div class="our-client sub-section">
+            <div class="containter flex-center">
+                <h1 class="section-title-01">Our Clients</h1>
+                <h2 class="section-title-02">Our Clients</h2>
+                <div class="content">
+                    <div class="swiper client-swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide flex-center">
+                            <div class="client-img">
+                                <img src="img/client1.jpg" alt="">
+                            </div>
+                            <div class="client-details">
+                                <p>Hi, I'm Aria Collins Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores magni fuga voluptatem distinctio iusto.</p>
+                                <h3>Aria Collins</h3>
+                                <span>Marketing Manager</span>
+                            </div>
+                          </div>
+
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
 
     <!--=============== External scripts ===============-->
+    <section class="contact section" id="contact">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Contact Me</h1>
+            <h2 class="section-title-02">Contact Me</h2>
+            <div class="content">
+                <div class="contact-left">
+                    <h2>Let's discuss your project</h2>
+                    <ul class="contact-list">
+                        <li class="contact-list">
+                            <h3 class="item-title"><i class="fas fa-phone"></i> Phone</h3>
+                            <span>+51 928 113 894</span>
+                        </li>
+                        <li class="contact-list">
+                            <h3 class="item-title"><i class="fas fa-envelope"></i> Email Adress</h3>
+                            <span><a href="mailto:elmarqueze@gmail.com">elmarqueze@gmail.com</a></span>
+                        </li>
+                        <li class="contact-list">
+                            <h3 class="item-title"><i class="fas fa-map-marker-alt"></i> Offical Address</h3>
+                            <span>Jr Granada 257, Pueblo Libre. Lima, Perú.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-right">
+                    <p>I am always open to discussing product<br><span>design work or partnerships.</span></p>
+                    <form action="" class="contact-form">
+                        <div class="first-row">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="second-row">
+                            <input type="email" placeholder="Email">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="third-row">
+                            <textarea name="" id="" rows="7" placeholder="Message"></textarea>
+                        </div>
+                        <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=============== Footer ===============-->
+    <footer>
+        <div class="footer-container">
+            <div class="about group">
+                <h2>Waldir</h2>
+                <p>Front-end Developer</p>
+                <a href="#about">About Me</a>
+            </div>
+            <div class="hr"></div>
+            <div class="info group">
+                <h3>More</h3>
+                <ul>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="follow group">
+                <h3>Follow</h3>
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright group">
+            <p>© 2022 by Waldir Marquez. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <!--=============== External scripts ===============-->
+    <!-- <script src="js/swiper-bundle.min.js"></script> -->
     <script src="js/main.js"></script>
 
 </body>
