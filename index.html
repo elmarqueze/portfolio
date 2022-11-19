@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waldir Marquez Portfolio</title>
-    <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
+    <!-- Swipter CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     
@@ -517,35 +523,64 @@
         </div>
 
         <!--=============== Our Clientes ===============-->
-        <!-- <div class="our-client sub-section">
-            <div class="containter flex-center">
-                <h1 class="section-title-01">Our Clients</h1>
-                <h2 class="section-title-02">Our Clients</h2>
-                <div class="content">
-                    <div class="swiper client-swiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide flex-center">
-                            <div class="client-img">
-                                <img src="img/client1.jpg" alt="">
-                            </div>
-                            <div class="client-details">
-                                <p>Hi, I'm Aria Collins Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores magni fuga voluptatem distinctio iusto.</p>
-                                <h3>Aria Collins</h3>
-                                <span>Marketing Manager</span>
-                            </div>
-                          </div>
+    <section class="container-clients">
+        <div class="container flex-center">
+            <h1 class="section-title-01 title-client">Our Clients</h1>
+            <h2 class="section-title-02 title-client">Our Clients</h2>
+           
+            <div class="testimonial mySwiper">
+                <div class="testi-content swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <img src="img/client1.jpg" alt="" class="image_client">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem expedita nisi corporis earum recusandae sequi fugiat, non soluta. Praesentium, expedita?
+                        </p>
 
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
 
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
+                        <div class="detailss">
+                            <span class="name">Danny Delgado</span>
+                            <span class="job">Software Engineer</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="img/client2.jpg" alt="" class="image_client">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem expedita nisi corporis earum recusandae sequi fugiat, non soluta. Praesentium, expedita?
+                        </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                        <div class="detailss">
+                            <span class="name">Danny Delgado</span>
+                            <span class="job">Software Engineer</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="img/client3.jpg" alt="" class="image_client">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem expedita nisi corporis earum recusandae sequi fugiat, non soluta. Praesentium, expedita?
+                        </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                        <div class="detailss">
+                            <span class="name">Danny Delgado</span>
+                            <span class="job">Software Engineer</span>
+                        </div>
                     </div>
                 </div>
+                <div class="swiper-button-next nav-button"></div>
+                <div class="swiper-button-prev nav-button"></div>
+                <div class="swiper-pagination"></div>
+            
             </div>
-        </div> -->
+        </div>
     </section>
 
-    <!--=============== External scripts ===============-->
+    </section>
+
+    <!--=============== Contact ===============-->
     <section class="contact section" id="contact">
         <div class="container flex-center">
             <h1 class="section-title-01">Contact Me</h1>
@@ -621,9 +656,10 @@
         </div>
     </footer>
 
-
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
     <!--=============== External scripts ===============-->
-    <!-- <script src="js/swiper-bundle.min.js"></script> -->
+    <script src="js/script.js"></script>
     <script src="js/main.js"></script>
 
 </body>

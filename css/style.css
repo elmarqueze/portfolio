@@ -341,7 +341,7 @@ header.sticky .navbar{
 
 .section{
     position: relative;
-    width: 1150px;
+    max-width: 1150px;
     margin-left: auto;
     margin-right: auto;
     padding: 6rem 2rem 2rem;
@@ -349,7 +349,7 @@ header.sticky .navbar{
 
 .sub-section{
     position: relative;
-    width: 1150px;
+    max-width: 1150px;
     margin-left: auto;
     margin-right: auto;
     padding: 6rem 0;
@@ -439,6 +439,16 @@ header.sticky .navbar{
     display: flex;
     column-gap: 30px;
 }
+
+
+.about-info .professional-list .list-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 20px;
+}
+
 
 .about-info .professional-list .list-item h3{
     font-size: 2.5em;
@@ -899,58 +909,100 @@ header.sticky .navbar{
 
 
 /*=============Our Clients==========*/
-/* 
-.our-client .containter{
-    flex-direction: column;
-}
-
-.our-client .containter .content{
+.container-clients{
+    height: 100vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.client-swiper .swiper-wrapper{
-    margin-bottom: 30px;
+
+.title-client{
+    margin: 0 auto;
 }
 
-.client-swiper .swiper-slider{
-    gap: 50px;
-    margin: 20px 0;
-}
-
-.client-img{
-    width: 250px;
-    height: 250px;
+.testimonial{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 50px 0;
     overflow: hidden;
-    border-radius: 10px;
 }
 
-.client-img img{
-    width: 100%;
-    height: 100%;
+.testimonial .image_client{
+    height: 170px;
+    width: 170px;
     object-fit: cover;
+    border-radius: 50%;
 }
 
-.client-details{
-    max-width: 500px;
+.testimonial .slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
 }
 
-.client-details p{
-    font-size: 1.2em;
+.slide p{
+    text-align: center;
+    padding: 0 100px;
+    font-size: 14px;
+    font-weight: 500;
     color: var(--third-color);
-    padding-bottom: 15px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid var(--linear-color);
 }
 
-.client-details h3{
-    color: var(--first-color);
-    font-size: 1.5em;
+.slide .quote-icon{
+    font-size: 30px;
+    color: var(--second-color);
 }
 
-.client-details span{
+.slide .detailss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detailss .name{
+    font: 1.2em;
+    font-weight: 600;
     color: var(--third-color);
-    font-size: 1.1em;
-} */
+}
+
+.detailss .job{
+    font: 0.6em;
+    font-weight: 300;
+    color: var(--third-color);
+}
+
+/* swiper button css */
+.nav-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translateY(30px);
+    background-color: rgba(0,0,0, 0.1);
+    transition: .2s;
+}
+
+.nav-button:hover{
+    background-color: rgba(0,0,0, 0.1)
+}
+
+.nav-button::after,
+.nav-button::before{
+    font-size: 20px;
+    color: #fff;
+}
+
+.swiper-pagination-bullet{
+    background-color: rgba(0,0,0, 0.8)
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--second-color);
+}
 
 /*=============Contact Me==========*/
 .contact .container .content{
@@ -1155,6 +1207,12 @@ footer a{
         padding: 40px;
         border-radius: 10px;
         box-shadow: var(--box-shadow);
+        transform: translateY(-50px);
+        transition: .3s ease;
+    }
+
+    .navigation.active .nav-items{
+        transform: translateY(0);
     }
 
     .nav-items a{
@@ -1164,7 +1222,7 @@ footer a{
     .nav-close-btn{
         position: absolute;
         background: url(../img/close.png)no-repeat;
-        filter: var(--color-filter);
+        /* filter: var(--color-filter); */
         background-size: 12px;
         background-position: center;
         width: 40px;
@@ -1177,11 +1235,169 @@ footer a{
 
     .nav-menu-btn{
         background: url(../img/menu.png)no-repeat;
-        filter: var(--color-filter);
+        /* filter: var(--color-filter); */
         background-position: center;
         width: 40px;
         height: 40px;
         cursor: pointer;
         display: block;
     }
+
+
+    /*=========Home section===========*/
+    .home .home-container .info{
+        font-size: 0.85rem;
+    }
+
+    /*=========About section===========*/
+    .about .container .content{
+        display: grid;
+        width: 100%;
+        row-gap: 20px;
+    }
+
+    .about-img img{
+        min-width: 0;
+        width: 100%;
+    }
+
+    .about-info{
+        min-width: 0;
+        width: 100%;
+    }
+
+    .about-info .professional-list{
+        flex-direction: column;
+    }
+
+    .about-info .professional-list .list-item{
+        justify-content: start;
+    }
+
+
+    /*=========Get-in-touch===========*/
+    .get-in-touch .contact-card{
+        display: grid;
+        width: 100%;
+    }
+
+    .contact-card .title{
+        font-size: 0.8rem;
+        line-height: 50px;
+    }
+
+
+
+    /*=========Our Clients===========*/
+    .swiper-slide p{
+        max-width: 60%;
+    }
+        
+    .nav-button{
+        display: none;
+    }
+    
+
+    /*=========Contact section===========*/
+    .contact .content{
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    .contact .contact-left{
+        margin-bottom: 40px;
+    }
+
+    .contact-form .second-row{
+        flex-direction: column;
+    }
+
+    .contact-form .second-row input{
+        width: 100%;
+    }
+
+    
+    /*=========Footer===========*/
+    footer .footer-container{
+        flex-direction: column;
+    }
+
+    .footer-container .about, .footer-container .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .footer-container .info ul{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-container .info ul li{
+        margin: 5px 0;
+    }
+
+    .footer-container .hr{
+        width: 100%;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.1);
+        margin: 10px 0 22px;
+    }
+
+}
+
+/*==========Media query max-width 730px============*/
+@media screen and (max-width: 730px){
+    /*=========Common styles for all sections===========*/
+    body{
+        margin: 5rem 0 0 0;
+    }
+
+    .section-title-01{
+        font-size: 3em;
+    }
+
+    .section-title-02{
+        font-size: 2em;
+        transform: translateY(-65px);
+    }
+
+    /*=========Home section===========*/
+    .home .home-container{
+        display: grid;
+    }
+
+    .home-container .home-img{
+        position: absolute;
+    }
+
+    .home-container .home-img img{
+        width: 65%;
+        transform: translate(80px, -180px);
+    }
+
+    .home .home-container .info{
+        font-size: 0.8rem;
+    }
+
+    .media-icons{
+        margin-bottom: 80px;
+    }
+
+    /*=========Get-in-touch section===========*/
+    .get-in-touch .contact-card{
+        display: grid;
+    }
+
+    .contact-card .title{
+        font-size: 0.6rem;
+        line-height: 40px;
+    }
+
+    .contact-card .contact-btn .btn{
+        font-size: 0.8rem;
+    }
+
 }
