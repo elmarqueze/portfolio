@@ -437,7 +437,7 @@ header.sticky .navbar{
 
 .about-info .professional-list{
     display: flex;
-    column-gap: 30px;
+    column-gap: 15px;
 }
 
 
@@ -1358,9 +1358,6 @@ footer a{
         margin: 5rem 0 0 0;
     }
     
-    /* body{
-        
-    } */
 
     .section-title-01{
         font-size: 3em;
@@ -1405,6 +1402,11 @@ footer a{
 
     .contact-card .contact-btn .btn{
         font-size: 0.8rem;
+    }
+
+    /*=========Footer===========*/
+    .footer-copyright p{
+        text-align: center;
     }
 
 }
