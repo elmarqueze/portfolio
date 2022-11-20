@@ -1174,6 +1174,7 @@ footer a{
 
 /*==========Media query max-width 1070px============*/
 @media screen and (max-width: 1070px) {
+
     /*=========Header navigation menu===========*/
     .navigation{
         position: fixed;
@@ -1351,9 +1352,15 @@ footer a{
 /*==========Media query max-width 730px============*/
 @media screen and (max-width: 730px){
     /*=========Common styles for all sections===========*/
-    body{
+    html, body{
+        max-width: 100%;
+        overflow-x: hidden;
         margin: 5rem 0 0 0;
     }
+    
+    /* body{
+        
+    } */
 
     .section-title-01{
         font-size: 3em;
