@@ -570,20 +570,20 @@ header.sticky .navbar{
 
 }
 
-.bar .html:before{
-    width: 95%;
-}
-
-.bar .css:before{
-    width: 85%;
-}
-
-.bar .javascript:before{
+.bar .react:before{
     width: 60%;
 }
 
-.bar .figma:before{
+.bar .bootstrap:before{
+    width: 80%;
+}
+
+.bar .javascript:before{
     width: 75%;
+}
+
+.bar .sass:before{
+    width: 83%;
 }
 
 .bar .git:before{
