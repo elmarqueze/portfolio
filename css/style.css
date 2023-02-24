@@ -579,7 +579,11 @@ header.sticky .navbar{
 }
 
 .bar .javascript:before{
-    width: 75%;
+    width: 70%;
+}
+
+.bar .node:before{
+    width: 60%;
 }
 
 .bar .sass:before{
