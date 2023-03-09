@@ -570,8 +570,12 @@ header.sticky .navbar{
 
 }
 
+.bar .vue:before{
+    width: 40%;
+}
+
 .bar .react:before{
-    width: 60%;
+    width: 50%;
 }
 
 .bar .bootstrap:before{
@@ -579,19 +583,19 @@ header.sticky .navbar{
 }
 
 .bar .javascript:before{
-    width: 70%;
+    width: 75%;
 }
 
 .bar .node:before{
-    width: 60%;
+    width: 40%;
 }
 
 .bar .sass:before{
-    width: 83%;
+    width: 80%;
 }
 
 .bar .git:before{
-    width: 80%;
+    width: 70%;
 }
 
 .experience-card{
